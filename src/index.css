@@ -1,0 +1,26 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
+}
+body .navBar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body .navBar .leftNav {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .navBar .leftNav a {
+  color: white;
+  text-decoration: underline;
+}
+body .navBar .leftNav svg {
+  border: 2px red solid;
+}
+body .navBar .rightNav {
+  display: flex;
+}/*# sourceMappingURL=index.css.map */
