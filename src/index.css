@@ -4,23 +4,58 @@ body {
   background-color: gray;
 }
 body .navBar {
+  margin-top: 50px;
+  font-family: "Ubuntu", sans-serif;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 body .navBar .leftNav {
-  width: 500px;
+  width: 700px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: left;
+  margin-right: 60px;
 }
-body .navBar .leftNav a {
+body .navBar .leftNav ul {
+  padding: 0;
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+body .navBar .leftNav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .navBar .leftNav ul li svg {
+  padding-left: 4px;
+  padding-right: 0;
+}
+body .navBar .leftNav ul li a {
   color: white;
-  text-decoration: underline;
+  text-decoration: none;
 }
 body .navBar .leftNav svg {
-  border: 2px red solid;
+  padding-right: 60px;
 }
 body .navBar .rightNav {
   display: flex;
+  height: inherit;
+  width: 250px;
+  align-items: center;
+  justify-content: space-between;
+}
+body .navBar .rightNav button {
+  height: 40px;
+  width: 100px;
+  border-radius: 100px;
+  border: 0;
+}
+body .navBar .rightNav .login-button {
+  background-color: transparent;
+}
+body .navBar .rightNav .signup-button {
+  margin-right: 30px;
 }/*# sourceMappingURL=index.css.map */

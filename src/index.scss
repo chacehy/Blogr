@@ -1,26 +1,72 @@
+$cta-hover: hsl(355, 100%, 74%);
+$light-red: hsl(356, 100%, 66%):
+$dark-blue:hsl(208, 49%, 24%);
+$white:hsl(0, 0%, 100%);
+$grayish-blue:hsl(240, 2%, 79%);
+$VD-grayish-blue :hsl(207, 13%, 34%);
+$footer-bg:hsl(240, 10%, 16%);
 body {
   width: 100vw;
   height: 100vh;
   background-color: gray;
-  .navBar{
+  .navBar {
+    margin-top: 50px;
+    font-family: "Ubuntu", sans-serif;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-  .leftNav {
-    width: 500px;
-    display: flex;
-    align-items: center ;
-    justify-content: space-between;
-    a {
-      color: white;
-      text-decoration: underline;
-    }
-    svg {
-      border: 2px red solid;
-    }
-  }
-  .rightNav{
+    .leftNav {
+      width: 700px;
       display: flex;
+      align-items: center;
+      justify-content: left;
+      margin-right: 60px;
+      ul {
+        padding: 0;
+        width: 280px;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          svg{
+            padding-left: 4px;
+            padding-right: 0;
+          }
+          a {
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+
+      svg {
+        padding-right: 60px;
+      }
+    }
+    .rightNav {
+      display: flex;
+      height: inherit;
+      width: 250px;
+      align-items: center;
+      justify-content: space-between;
+      button {
+        height: 40px;
+        width: 100px;
+        border-radius: 100px;
+        border: 0;
+      }
+      .login-button{
+        background-color: transparent;
+
+      }
+      .signup-button{
+        margin-right: 30px;
+      }
+    }
   }
 }
-}
+
+//border: 2px red solid;
